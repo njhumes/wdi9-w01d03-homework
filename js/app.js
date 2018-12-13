@@ -99,6 +99,7 @@ for (let i = 1; i < 4; i++) {
 }
 
 // unsure if this is the correct way to solve the above question
+// ask about in class **********
 
 
 for (let i = 0; i < kristynsCloset.length; i++) {
@@ -115,3 +116,16 @@ for (let i = 1; i < 1001; i++) {
     }
 } 
 console.log(sum);
+
+//BONUS
+
+const argument = 7;
+for (let i = 1; i <= argument; i++) {
+    console.log('#'.repeat(i));
+}
+
+// couldn't figure out 2 and 4 yet
+
+for (let i = argument; i >= 1; i--) {
+    console.log('#'.repeat(i));
+}
