@@ -27,3 +27,24 @@ for (let i = 0; i < 101; i++) {
         console.log('Buzz');
     }
    }
+
+const shahzad = ["Shahzad", 1000, "Austin"];
+const jim = ["Jim", 16, "All cities"];
+const reuben = ["Reuben", 22, "Durham"];
+const daniel = ["Daniel", 186, "Dallas"];
+const ryan = ["Ryan", 65, "Denver"];
+
+shahzad[0] = 'Gameboy';
+daniel[1] = (daniel[1] + 1);
+ryan[2] = 'Gotham City';
+reuben.pop();
+reuben.push('Chicago');
+jim.pop();
+jim.push('Austin', 'Edinburgh', 'London');
+jim.splice(3, 2);
+
+
+console.log(jim);
+console.log(reuben);
+
+
