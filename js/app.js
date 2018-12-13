@@ -91,13 +91,21 @@ thomsCloset[2].push(shoe);
 
 const kristynsOutfits = kristynsCloset[Math.floor(Math.random()*kristynsCloset.length)];
 const thomsOutfits = thomsCloset[Math.floor(Math.random() * thomsCloset.length)];
-for (i = 1; i < 4; i++) {
+for (let i = 1; i < 4; i++) {
     console.log('Outfit ' + i + ' is ' + kristynsCloset[Math.floor(Math.random() * kristynsCloset.length)]);
 }
-for (i = 1; i < 4; i++) {
+for (let i = 1; i < 4; i++) {
     console.log('Outfit ' + i + ' is ' + thomsOutfits[Math.floor(Math.random() * thomsCloset.length)]);
 }
 
+// unsure if this is the correct way to solve the above question
 
 
+for (let i = 0; i < kristynsCloset.length; i++) {
+    console.log(`WHIRR: Now washing ${kristynsCloset[i]}`);
+}
+
+for (let i = 0; i < thomsCloset.length; i++){
+    console.log(thomsCloset[i]);
+}
 
