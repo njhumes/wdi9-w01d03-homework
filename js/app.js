@@ -44,7 +44,9 @@ jim.push('Austin', 'Edinburgh', 'London');
 jim.splice(3, 2);
 
 
-console.log(jim);
-console.log(reuben);
+const ninjas = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+for (let i = 0; i < ninjas.length; i++) {
+    console.log(ninjas[i].toUpperCase());
+}
 
 
