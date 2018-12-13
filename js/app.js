@@ -50,3 +50,54 @@ for (let i = 0; i < ninjas.length; i++) {
 }
 
 
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+    [
+        // These are Thom's shirts
+        "grey button-up",
+        "dark grey button-up",
+        "light blue button-up",
+        "blue button-up",
+    ], [
+        // These are Thom's pants
+        "grey jeans",
+        "jeans",
+        "PJs"
+    ], [
+        // Thom's accessories
+        "wool mittens",
+        "wool scarf",
+        "raybans"
+    ]
+];
+
+/* remove kristins shoe and save to new var
+use var to add shoe to thoms accessories*/
+
+let shoe = kristynsCloset.shift();
+//console.log(shoe);
+thomsCloset[2].push(shoe);
+//console.log(thomsCloset);
+
+const kristynsOutfits = kristynsCloset[Math.floor(Math.random()*kristynsCloset.length)];
+const thomsOutfits = thomsCloset[Math.floor(Math.random() * thomsCloset.length)];
+for (i = 1; i < 4; i++) {
+    console.log('Outfit ' + i + ' is ' + kristynsCloset[Math.floor(Math.random() * kristynsCloset.length)]);
+}
+for (i = 1; i < 4; i++) {
+    console.log('Outfit ' + i + ' is ' + thomsOutfits[Math.floor(Math.random() * thomsCloset.length)]);
+}
+
+
+
+
